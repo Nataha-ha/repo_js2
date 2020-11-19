@@ -2,34 +2,30 @@ class List {
     items = [];
 
     constructor() {
-        let goods = this.fetchGoods();
-        goods = goods.map(cur => {
-            return new GoodItem(cur);
+        let goodsPromise = this.fetchGoods();
+        goodsPromise.then(() => {
+            this.render();
         });
-        this.items.push(...goods);
-        this.render();
+
     }
 
     fetchGoods() {
-        return [{
-                name: 'Shirt',
-                price: 150
-            },
-            {
-                name: 'Socks',
-                price: 15
-            },
-            {
-                name: 'Jacket',
-                price: 50
-            },
-            {
-                name: 'Shoes',
-                price: 1500
-            },
-
-        ];
+        const result = fetch('http://localhost:3000/database.json');
+        return result
+            .then(res => {
+                return res.json();
+            })
+            .then(data => {
+                console.log(data);
+                this.items = data.data.map(cur => {
+                    return new GoodItem(cur);
+                });
+            })
+            .catch(err => {
+                console.warn('Check network', err);
+            });
     }
+
     render() {
         this.items.forEach(good => {
             good.render();
