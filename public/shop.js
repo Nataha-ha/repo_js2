@@ -21,8 +21,8 @@ class List {
                     return new GoodItem(cur);
                 });
             })
-            .catch(err => {
-                console.warn('Check network', err);
+            .catch(e => {
+                console.log('Check network', e);
             });
     }
 
