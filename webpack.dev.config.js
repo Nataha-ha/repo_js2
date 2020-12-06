@@ -1,7 +1,7 @@
 const {
     merge
-} = require('webpack-merge')
-const base = require('./webpack.config')
+} = require('webpack-merge');
+const base = require('./webpack.config');
 
 module.exports = merge(base, {
     output: {
@@ -15,4 +15,4 @@ module.exports = merge(base, {
         host: 'localhost',
         hot: true,
     }
-})
+});

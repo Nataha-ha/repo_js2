@@ -1,9 +1,10 @@
-import './style.css';
+import Vue from 'vue';
+import App from './App.vue';
 
-import Cart from './cart.js';
-import List from './list.js';
-
-
-
-const CartInstanse = new Cart();
-const ListInstance = new List(CartInstanse);
+new Vue({
+    el: 'main',
+    template: '<App />',
+    components: {
+        App,
+    }
+});
