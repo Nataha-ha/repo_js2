@@ -1,0 +1,8 @@
+{
+    "data": [
+      { "name": "Shirt2", "price": 250 },
+      { "name": "Socks2", "price": 25 },
+      { "name": "Jacket2", "price": 20 },
+      { "name": "Shoes2", "price": 2500 }
+    ]
+  }
