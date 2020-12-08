@@ -1,20 +1,9 @@
 {
-    "data": [
-        {
-            "name": "Shirt",
-            "price": 150
-        },
-        {
-            "name": "Socks",
-            "price": 15
-        },
-        {
-            "name": "Jacket",
-            "price": 50
-        },
-        {
-            "name": "Shoes",
-            "price": 1500
-        }
-    ]
+
+    "1": { "id": 1, "name": "Shirt1", "price": 150},
+    "2": { "id": 2, "name": "Shirt2", "price": 250},
+    "3": { "id": 3, "name": "Shirt3", "price": 350},
+    "4": { "id": 4, "name": "Shirt4", "price": 450},
+    "5": { "id": 5, "name": "Shirt5", "price": 550}
+
 }
