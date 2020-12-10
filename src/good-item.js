@@ -1,7 +1,6 @@
 import Button from './button.js';
-import {
-    GoodItemInCart
-} from './good-item-in-cart.js';
+import GoodItemInCart from './good-item-in-cart.js';
+import AGoodItem from './AbstractGoodItem.js';
 
 export default class GoodItem {
     name = '';

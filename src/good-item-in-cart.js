@@ -1,8 +1,8 @@
-import GoodItem from './good-item.js';
+import AGoodItem from './AbstractGoodItem.js'
 
-export default class GoodItemInCart extends GoodItem {
-    constructor(props) {
-        super(props);
+export default class GoodItemInCart extends AGoodItem {
+    constructor(...props) {
+        super(...props);
     }
 
     render(placeToRender) {
