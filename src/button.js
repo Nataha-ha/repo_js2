@@ -1,4 +1,4 @@
-class Button {
+export default class Button {
     _text = '';
     _onClickClb = null;
 
